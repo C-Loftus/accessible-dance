@@ -38,7 +38,7 @@ def run_action(action) -> None:
     elif len(multiple_keys) > 1:
         pyautogui.hotkey(*multiple_keys) 
     else: 
-        pyautogui.press(action)
+        pyautogui.keyDown(action)
 
 def parse_keys_to_actions(keys, conf, event) -> list:
     key = OSTENT.decode_key(event.code)

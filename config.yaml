@@ -16,8 +16,7 @@ UP:
   - scrollup
 
 DOWN: 
-- "pagedown"
-- alt a
+- scrolldown
 
 LEFT:
  - pagedown
@@ -26,15 +25,16 @@ RIGHT:
   - pageup
 
 O:
-- "shell:pkill talon"
+- "shell:t"
 
 X:
-- "shell:echo test"
+- "shell:pkill talon"
+
 
 SQR: 
- - mimic:talon sleep
+ - mimic:command mode
 TRI: 
-- win
+- mimic:dictation mode
 
 START:
 - mimic:talon wake 
@@ -42,5 +42,3 @@ START:
 SELECT:
 - mimic:talon sleep
 
-TEST:
-- run
