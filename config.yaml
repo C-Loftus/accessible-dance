@@ -26,10 +26,14 @@ LEFT:
 
 RIGHT: 
   - pageup
+  - pagedown
 
 O:
 # focuses zoom
 - "shell:wmctrl -a zoom"
+- alt a
+- "mimic:talon wake"
+- "mimic:mixed mode"
 
 X:
 - "shell:pkill talon"
@@ -43,5 +47,4 @@ START:
 - mimic:talon wake 
 
 SELECT:
-- mimic:talon sleep
-
+- shell:echo 

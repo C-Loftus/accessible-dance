@@ -8,7 +8,9 @@ This program can be ran on Linux Mac OS or Windows.
  Clone the repository. Make sure that your dancepad is plugged in.  make sure that  your dance pad is listed within the [hardware mappings](./hardware_mappings.yaml) file
 
  Pads that are supported:
- https://www.amazon.com/dp/B00FJ2KTXC/ref=cm_sw_r_cp_apa_fabc_QCHMCW0ADDK3W96GBF7X
+(others should work, you will just need to check the mappings and put them in the [hardware mappings](./hardware_mappings.yaml) file):
+* https://www.amazon.com/dp/B00FJ2KTXC/ref=cm_sw_r_cp_apa_fabc_QCHMCW0ADDK3W96GBF7X
+ 
 To install
 ```bash
 pip install -r requirements.txt
