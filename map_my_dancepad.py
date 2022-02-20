@@ -4,14 +4,18 @@ from __future__ import print_function
 
 from inputs import get_gamepad
 
-
+'''
+TODO:  check to see if this can be automated in some way
+  doesn't seem like it can be since the os doesn't know 
+ anything about the visual styling of the buttons
+ which is how the user interacts with it  and how mappings are made
+'''
 def main():
-    """Just print out some event infomation when the gamepad is used."""
     while 1:
         events = get_gamepad()
         for event in events:
             if event.ev_type == "Key" and event.state == 1:
-                message = f'You presses key "{event.code}"'
+                message = f'You pressed key:\"{event.code}\"'
                 print(message)
 
 
