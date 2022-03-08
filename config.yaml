@@ -14,18 +14,18 @@
 
 # DO NOT PUT BUTTON AND COMMAND ON THE SAME LINE OR PARSING WILL FAIL
 # MUST BE ON SEPARATE LINES 
+
 UP: 
-  - scrollup
+  - pause
 # - extra command here
 # - another if you desire
 DOWN: 
-- scrolldown
+- del
 
 LEFT:
- - pagedown
+ - pageup
 
 RIGHT: 
-  - pageup
   - pagedown
 
 O:
@@ -34,9 +34,10 @@ O:
 - alt a
 - "mimic:talon wake"
 - "mimic:mixed mode"
+- "shell:wmctrl -a firefox"
 
 X:
-- "shell:pkill talon"
+- click
 
 SQUARE: 
  - mimic:command mode
@@ -47,4 +48,4 @@ START:
 - mimic:talon wake 
 
 SELECT:
-- shell:echo 
+- mimic:talon sleep
